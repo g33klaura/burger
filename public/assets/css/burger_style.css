@@ -1,0 +1,19 @@
+html {
+	background: url('../img/parrot_burger.jpg') no-repeat center center fixed;
+			-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+  font-family: 'Passion One', cursive;
+	font-weight: 400;
+}
+
+h1 {
+	font-family: 'Passion One', cursive;
+	font-weight: 700;
+	color: #e65100;
+}
+
+h3 {
+	color: #fff;
+}
