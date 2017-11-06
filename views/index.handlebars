@@ -1,4 +1,4 @@
-<div class="container">
+{{!-- <div class="container"> --}}
 
   <div class="row">
     <div class="col s12 center-align">
@@ -9,9 +9,10 @@
 
   <div class="row">
     <div class="col s4 center-align">
-      <h5>Ready to Eat</h5>
+      <h5>On Deck</h5>
       <ul>
         {{#each burgers}}
+          <li>{{burger_name}}</li>
           {{!-- {{#unless devoured}} --}}
             {{!-- {{> cats/cat-block sleep=true}} --}}
           {{!-- {{/unless}} --}}
@@ -23,14 +24,16 @@
       <div class="row">
         <form class="col s12">
           <div class="row">
+            <h6>Describe your dream burger...</h6>
             <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Describe a dream burger</label>
+              <textarea id="new-burger" class="materialize-textarea"></textarea>
+              <label for="new-burger"></label>
             </div>            
           </div>
+          {{!-- Double-check if button can be in above row... --}}
           <div class="row">
             <div class="col s12">
-              <button class="btn waves-effect waves-light teal darken-1" type="submit" name="action">Add burger
+              <button class="btn waves-effect waves-light teal darken-1" type="submit" name="add-burger">Add burger
               <i class="material-icons right">restaurant</i>
               </button>
             </div>
@@ -41,7 +44,7 @@
     {{!-- ^^Closes middle col s4 --}}
 
     <div class="col s4 center-align">
-      <h5>Eaten</h5>
+      <h5>Devoured!</h5>
       <ul>
         {{#each burgers}}
           {{#if devoured}}
@@ -52,4 +55,4 @@
     </div> 
   </div>
 
-</div>
+{{!-- </div> --}}
