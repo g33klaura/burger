@@ -1,7 +1,7 @@
 // REQUIREMENTS ========================================
 //
 // Import burger model script
-var connection = require('../models/burger.js');
+var burger = require('../models/burger.js');
 
 var express = require('express');
 var router = express.Router();
