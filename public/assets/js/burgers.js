@@ -5,6 +5,9 @@ $(function() {
 	// Need 'devour' buttons in a partial***
 	// checkout cat-block in partials
 	$('.change-eat').on('click', function(event) {
+
+		console.log('devoured clicked');
+
 		let id = $(this).data('id');
 		let newEat = $(this).data('neweat');
 
@@ -13,12 +16,12 @@ $(function() {
 		};
 
 		// Send the PUT request.
-    $.ajax("/api/burgers/" + id, {
-      type: "PUT",
+    $.ajax('/api/burgers/' + id, {
+      type: 'PUT',
       data: newEatState
     }).then(
       function() {
-        console.log("changed eat-status to", newEat);
+        console.log('changed eat-status to', newEat);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -27,6 +30,9 @@ $(function() {
 
 	// Click function for '#add-burger' button
 	$('#add-burger').on('submit', function(event) {
+
+		console.log('submit clicked');
+
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
@@ -37,12 +43,12 @@ $(function() {
     };
 
     // Send the POST request.
-    $.ajax("/api/burgers", {
-      type: "POST",
+    $.ajax('/api/burgers', {
+      type: 'POST',
       data: newBurger
     }).then(
       function() {
-        console.log("created new delicious burger");
+        console.log('created new delicious burger');
         // Reload the page to get the updated list
         location.reload();
       }
