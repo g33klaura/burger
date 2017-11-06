@@ -12,10 +12,10 @@
       <h5>On Deck</h5>
       <ul>
         {{#each burgers}}
-          <li>{{burger_name}}</li>
-          {{!-- {{#unless devoured}} --}}
-            {{!-- {{> cats/cat-block sleep=true}} --}}
-          {{!-- {{/unless}} --}}
+          {{!-- <li>{{burger_name}}</li> --}}
+          {{#unless devoured}}
+            {{> burger-block devour=true}}
+          {{/unless}}
         {{/each}}
       </ul>
     </div>
