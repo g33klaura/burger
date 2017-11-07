@@ -19,7 +19,7 @@ const app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
 // Will this point to 'test.html'?
-app.use(express.static('/public'));
+app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
