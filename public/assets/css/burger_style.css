@@ -16,5 +16,10 @@ h1 {
 h3, h5 {
 	font-family: 'Passion One', cursive;
 	font-weight: 400;
-	/*color: #fff;*/
+	color: #fff;
+}
+
+.eaten {
+	/*color: #bbb;*/
+	text-decoration: line-through;
 }
