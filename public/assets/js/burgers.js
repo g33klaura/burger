@@ -28,10 +28,11 @@ $(function() {
     );
 	});
 
+
 	// Click function for '#add-burger' button
 	$('#add-burger').on('click', function(event) {
 
-		console.log('submit clicked');
+		// console.log('submit clicked');
 
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
@@ -39,7 +40,6 @@ $(function() {
     let newBurger = {
       burger_name: $('#new-burger').val().trim(),
       devoured: 0
-      // My app doesn't have a sleepy/not sleepy radio button...
     };
 
     // Send the POST request.
