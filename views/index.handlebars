@@ -48,8 +48,8 @@
       <ul>
         {{#each burgers}}
           {{#if devoured}}
-            {{!-- {{> cats/cat-block sleep=false}} --}}
-            {{> burger-block devour=false}}
+            {{!-- New partial sans button --}}
+            {{> devoured-block devour=false}}
           {{/if}}
         {{/each}}
       </ul>
