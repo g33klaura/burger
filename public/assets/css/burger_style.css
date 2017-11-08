@@ -4,8 +4,7 @@ html {
   		-moz-background-size: cover;
   		-o-background-size: cover;
   		background-size: cover;
-  font-family: 'Passion One', cursive;
-	font-weight: 400;
+  font-family: 'Lato', sans-serif;
 }
 
 h1 {
@@ -14,6 +13,8 @@ h1 {
 	color: #e65100;
 }
 
-h3 {
-	color: #fff;
+h3, h5 {
+	font-family: 'Passion One', cursive;
+	font-weight: 400;
+	/*color: #fff;*/
 }
