@@ -6,13 +6,14 @@ A "restaurant app" that lets users input the names of burgers they'd like to eat
 * Uses MVC (Model, View, Controller) structure
 
 ### Deployed Link
-[Heroku]https://limitless-temple-77629.herokuapp.com/
+[Heroku] https://limitless-temple-77629.herokuapp.com/
 
 ### Key Features
 * User text inputs (burgers) are saved to a MySQL database
 * Burgers saved to the database are persistent, "devoured" or not
+* HTML and CSS are rendered using Handlebars views and partials
 
 ### Screenshots
 ![Main](public/assets/img/main_screen.png)
 <br>
-##### Background image by <a href="http://jimwarren.com/">Jim Warren</a>
+Background image by <a href="http://jimwarren.com/">Jim Warren</a>
