@@ -2,8 +2,6 @@
 
 $(function() {
 
-	// Need 'devour' buttons in a partial***
-	// checkout cat-block in partials
 	$('.change-eat').on('click', function(event) {
 
 		console.log('devoured clicked');
@@ -15,7 +13,7 @@ $(function() {
 			devoured: newEat
 		};
 
-		// Send the PUT request.
+		// Send the PUT request
     $.ajax('/api/burgers/' + id, {
       type: 'PUT',
       data: newEatState
@@ -34,7 +32,7 @@ $(function() {
 
 		// console.log('submit clicked');
 
-    // Make sure to preventDefault on a submit event.
+    // Make sure to preventDefault on a submit event
     event.preventDefault();
 
     let newBurger = {
@@ -42,7 +40,7 @@ $(function() {
       devoured: 0
     };
 
-    // Send the POST request.
+    // Send the POST request
     $.ajax('/api/burgers', {
       type: 'POST',
       data: newBurger

@@ -6,8 +6,6 @@ const express = require('express');
 const methodOverride = require('method-override');
 const bodyParser = require('body-parser');
 
-// Might be needed in a diff script...
-// const mysql = require('mysql');
 const exphbs = require('express-handlebars');
 
 let PORT = process.env.PORT || 3000;
@@ -17,19 +15,19 @@ let PORT = process.env.PORT || 3000;
 //
 const app = express();
 
-// Serve static content for the app from the "public" directory in the application directory.
-// Will this point to 'test.html'?
+// Serve static content for the app from the "public" directory in the application directory
 app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// Set default handlebars template
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 
 // ROUTING =============================================
 //
-// Import routes and give the server access to them.
+// Import routes and give the server access to them
 var routes = require('./controllers/burgers_controller.js');
 
 app.use('/', routes);
